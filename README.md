@@ -41,7 +41,7 @@ We plan to use a two way see-through mirror behind which a monitor will be place
   - Homepage Containing the list of all the screens provided
 ## Instruction on How to use the program
 
-The *SmartMirror.py* is the main file which will help execute all the different screens.
+The *SmartMirror.py* is the main file which will helps execute all the different screens.
 We will keep an updated list of all the libraries used in *Requirements.txt*
 
 ## Hardware Components
