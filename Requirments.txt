@@ -11,3 +11,9 @@ Requirements
 - json
 - datetime
 - calendar
+- future
+- pickle
+- os.path
+- googleapiclient.discovery
+- google_auth_oauthlib.flow
+- google.auth.transport.requests
