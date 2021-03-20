@@ -8,6 +8,13 @@ from _AppDrawer import AppDrawer
 from _VoiceCommandScreen import VoiceCommandScreen
 import speech_recognition as sr
 import random
+import vlc  
+import pafy 
+import time
+import keyboard
+from youtubesearchpython import VideosSearch
+
+
 
 commandsList = ['What is the time?', 'How is the weather', 'what movies are playing?', 'list tv shows', 'what is in the news', 'go to office screen']
 
@@ -47,6 +54,40 @@ class SmartMirror:
                     self.screen = OfficeScreen(self.frm)
                     self.screen.pack(side = TOP, fill=BOTH, expand = YES)
                     self.onScreen='officescreen'
+                    
+                if ('play' in command):
+                    movieName = command.replace("play","")
+                    searchQuery = movieName+" Trailer"
+                    videosSearch = VideosSearch(searchQuery)
+                    info_dict = videosSearch.result()["result"][0]   # This will provide info for whole video
+
+                    # url of the video 
+                    url = info_dict["link"]
+
+                    # creating pafy object of the video 
+                    video = pafy.new(url)
+
+                    # getting stream at index 0 
+                    best = video.streams[0] 
+
+                    # creating vlc media player object 
+                    media = vlc.MediaPlayer(best.url) 
+                    media.toggle_fullscreen()
+
+                    # start playing video 
+                    media.play()
+                    start = time.time()
+
+                    while True:
+                        if((time.time() - start) < video.length):
+                            if keyboard.is_pressed('n'):
+                                media.stop()
+                                break
+                            else:
+                                time.sleep(1) 
+                        else:
+                            media.stop()
+                            break
                     
                 elif ('home' in command) or ('news' in command) or ('headline' in command):
                     for widget in self.frm.winfo_children():
