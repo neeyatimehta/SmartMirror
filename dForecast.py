@@ -36,12 +36,11 @@ class Forecasts(Frame):
         forecast_obj = json.loads(response.text)
 
         data = forecast_obj['data']
-
         i=0
         
         #setting values
-        for day in data:
-            if i>7:
+        for day in data[1:]:
+            if i>5:
                 break
             high_temp = day['high_temp']
             low_temp =  day['low_temp']
