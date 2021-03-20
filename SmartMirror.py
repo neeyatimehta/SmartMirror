@@ -2,6 +2,7 @@ from tkinter import *
 from _MirrorScreen import MirrorScreen
 from _HomeScreen import HomeScreen
 from _EntertainmentScreen import EntertainmentScreen
+from _OfficeScreen import OfficeScreen
 
 
 
@@ -44,6 +45,14 @@ class SmartMirror:
             self.screen = EntertainmentScreen(self.frm)
             self.screen.pack(side = TOP, fill=BOTH, expand = YES)
             self.onScreen='entertainmentscreen'
+        
+        #Office screen
+        elif choice == 'o':
+            for widget in self.frm.winfo_children():
+                widget.destroy()
+            self.screen = OfficeScreen(self.frm)
+            self.screen.pack(side = TOP, fill=BOTH, expand = YES)
+            self.onScreen='officescreen'
 
     #Toggle fullscreen
     def toggle_fullscreen(self, event=None):
