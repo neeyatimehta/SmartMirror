@@ -17,3 +17,5 @@ Requirements
 - googleapiclient.discovery
 - google_auth_oauthlib.flow
 - google.auth.transport.requests
+- speech_recognition
+- random
