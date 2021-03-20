@@ -4,6 +4,7 @@ from _HomeScreen import HomeScreen
 from _EntertainmentScreen import EntertainmentScreen
 from _OfficeScreen import OfficeScreen
 from _WeatherScreen import WeatherScreen
+from _AppDrawer import AppDrawer
 
 
 
@@ -13,12 +14,12 @@ class SmartMirror:
         self.tk.configure(background='black')
         self.frm = Frame(self.tk, background="black") #screen container
         self.frm.pack(side = TOP, fill=BOTH, expand = YES)
-        self.screen = MirrorScreen(self.frm) #display screen variable
+        self.screen = AppDrawer(self.frm) #display screen variable
         self.screen.pack(side = TOP, fill=BOTH, expand = YES)
         self.state = False #fullscreen toggle variable
         self.tk.bind("<Return>", self.toggle_fullscreen)
         self.tk.bind("<Key>", self.switch_screen)#switching screen
-        self.onScreen='mirrorscreen'
+        self.onScreen='appdrawer'
         
     def switch_screen(self,event):
         choice = event.char #key value
@@ -62,6 +63,14 @@ class SmartMirror:
             self.screen = WeatherScreen(self.frm)
             self.screen.pack(side = TOP, fill=BOTH, expand = YES)
             self.onScreen='weatherscreen'
+        
+        #App Drawer
+        if choice == 'a':
+            for widget in self.frm.winfo_children():
+                widget.destroy()
+            self.screen = AppDrawer(self.frm)
+            self.screen.pack(side = TOP, fill=BOTH, expand = YES)
+            self.onScreen='appdrawer'
 
     #Toggle fullscreen
     def toggle_fullscreen(self, event=None):
