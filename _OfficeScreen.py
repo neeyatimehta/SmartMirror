@@ -15,7 +15,7 @@ class OfficeScreen(Frame):
         self.rightFrame.pack(side = RIGHT, fill=BOTH, expand = YES)
         # calEvents
         self.calEvents = CalendarEvents(self.rightFrame)
-        self.calEvents.pack(side=TOP, anchor=W, padx=100, pady=60)
+        self.calEvents.pack(side=TOP, anchor=W, padx=50, pady=60)
         # Cal
         self.cal = Calendar(self.leftFrame)
         self.cal.pack(side=TOP, anchor=W, padx=100, pady=60)
