@@ -26,10 +26,10 @@ We plan to use a two way see-through mirror behind which a monitor will be place
   - [x] Trending Movies
   - [x] Trending TV Shows
   - [ ] Trailer for Trending Movies and TV Shows 
-- [ ] Office Screen
-  - [ ] Monthly Calendar
-  - [ ] Task List
-  - [ ] Calendar Events
+- [x] Office Screen
+  - [x] Monthly Calendar
+  - [x] Task List
+  - [x] Calendar Events
 - [ ] Weather Forecast
   - [ ] Current Weather
   - [ ] Weather forecast for one week 
