@@ -30,7 +30,7 @@ class News(Frame):
         headlines_url = "https://news.google.com/news?ned=in&output=rss"
         feed = feedparser.parse(headlines_url)
 
-        for post in feed.entries[0:5]:
+        for post in feed.entries[0:4]:
             headline = NewsHeadline(self.headlineContainer, post.title)
             headline.pack(side=TOP, anchor=W)
         self.after(600000, self.getHeadlines)#refreshes every 10min
@@ -51,7 +51,7 @@ class NewsHeadline(Frame):
         self.iconLabel.pack(side=LEFT,anchor=N)
 
         self.eventName = event_name
-        self.eventNameLabel = Label(self, bg='black',text=self.eventName, wraplength=1000, justify="left",font=('Helvetica', 18),fg="white")
+        self.eventNameLabel = Label(self, bg='black',text=self.eventName, wraplength=900, justify="left",font=('Helvetica', 15),fg="white")
         self.eventNameLabel.pack(side=LEFT, anchor=N)
 
 
