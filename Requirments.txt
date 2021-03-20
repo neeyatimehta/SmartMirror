@@ -9,3 +9,4 @@ Requirements
 - feedparser
 - Pillow
 - json
+- datetime
