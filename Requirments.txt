@@ -19,3 +19,7 @@ Requirements
 - google.auth.transport.requests
 - speech_recognition
 - random
+- vlc  
+- pafy 
+- import keyboard
+- youtube-search-python
