@@ -20,7 +20,7 @@ We plan to use a two way see-through mirror behind which a monitor will be place
   - [x] Clock 
 - [ ]  Main Screen
   - [x] Clock
-  - [ ] News
+  - [x] News
   - [ ] Weather
 - [ ] Entertainment Screen
   - [ ] Trending Movies
