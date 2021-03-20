@@ -31,8 +31,8 @@ We plan to use a two way see-through mirror behind which a monitor will be place
   - [x] Task List
   - [x] Calendar Events
 - [ ] Weather Forecast
-  - [ ] Current Weather
-  - [ ] Weather forecast for one week 
+  - [x] Current Weather
+  - [x] Weather forecast for one week 
 - [ ] Voice Commands
   - This helps in Switching Between the screens 
 - [ ] Command Error Screen
