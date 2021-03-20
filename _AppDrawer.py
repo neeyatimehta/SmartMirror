@@ -11,11 +11,11 @@ class AppDrawer(Frame):
         self.title=Label(self.topFrame, text=self.title, font =('Helvetica', 40, 'bold'), fg='white', bg='black')
         self.title.pack(side=TOP, anchor=CENTER, pady=50)
         
-        self.bottomFrame = Frame(self, background = 'black')
-        self.bottomFrame.pack(side = TOP, fill = BOTH, expand = YES)
+        self.middleFrame = Frame(self, background = 'black')
+        self.middleFrame.pack(side = TOP, fill = BOTH, expand = YES)
 
         #HomeScreen Widget
-        self.homeScreen = Frame(self.bottomFrame, background = 'black')
+        self.homeScreen = Frame(self.middleFrame, background = 'black')
         self.homeScreen.pack(side = LEFT, fill = BOTH, expand = YES, padx=25)
         #HomeScreen Icon
         homeScreenImg = Image.open("assets/Home.png")
@@ -30,7 +30,7 @@ class AppDrawer(Frame):
         self.homeScreenLbl.pack(side=TOP, anchor=CENTER, pady=50)
 
         #entertainmentScreen Widget
-        self.entertainmentScreen = Frame(self.bottomFrame, background = 'black')
+        self.entertainmentScreen = Frame(self.middleFrame, background = 'black')
         self.entertainmentScreen.pack(side = LEFT, fill = BOTH, expand = YES, padx=25)
         #entertainmentScreen Icon
         entertainmentScreenImg = Image.open("assets/Entertainment.png")
@@ -45,7 +45,7 @@ class AppDrawer(Frame):
         self.entertainmentScreenLbl.pack(side=TOP, anchor=CENTER, pady=50)
 
         #officeScreen Widget
-        self.officeScreen = Frame(self.bottomFrame, background = 'black')
+        self.officeScreen = Frame(self.middleFrame, background = 'black')
         self.officeScreen.pack(side = LEFT, fill = BOTH, expand = YES, padx=25)
         #officeScreen Icon
         officeScreenImg = Image.open("assets/Office.png")
@@ -60,7 +60,7 @@ class AppDrawer(Frame):
         self.officeScreenLbl.pack(side=TOP, anchor=CENTER, pady=50)
 
         #weatherForecast Widget
-        self.weatherForecast = Frame(self.bottomFrame, background = 'black')
+        self.weatherForecast = Frame(self.middleFrame, background = 'black')
         self.weatherForecast.pack(side = LEFT, fill = BOTH, expand = YES, padx=25)
         #weatherForecast Icon
         weatherForecastImg = Image.open("assets/PartlySunny.png")
@@ -73,6 +73,14 @@ class AppDrawer(Frame):
         #weatherForecast Title
         self.weatherForecastLbl = Label(self.weatherForecast, text = 'Weather Forecast', font =('Helvetica', 20, 'bold'), fg='white', bg='black')
         self.weatherForecastLbl.pack(side=TOP, anchor=CENTER, pady=50)
+
+        self.bottomFrame = Frame(self, background = 'black')
+        self.bottomFrame.pack(side = TOP, fill = BOTH, expand = YES)
+
+        #youtube
+        self.youtubeLbl = Label(self.bottomFrame, text = 'Ask any to play any video on youtube!', font =('Helvetica', 18, 'bold'), fg='white', bg='black')
+        self.youtubeLbl.pack(side=TOP, anchor=CENTER, pady=50)
+        
         
 
 if __name__ == "__main__": 
