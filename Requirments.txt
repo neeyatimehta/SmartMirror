@@ -1,0 +1,23 @@
+Requirements
+
+tkinter:DONE  
+locale
+threadin
+time
+contextlib->contextmanager
+
+requests:DONE
+feedparser:DONE
+json :DONE
+PIL -> Image, ImageTk
+
+calendar
+__future->print_function
+datetime
+
+pickle
+os.path
+from googleapiclient.discovery import build
+from google_auth_oauthlib.flow import InstalledAppFlow
+Speech Recognition
+from google.auth.transport.requests import Request
