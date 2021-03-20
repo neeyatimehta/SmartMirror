@@ -3,6 +3,7 @@ from _MirrorScreen import MirrorScreen
 from _HomeScreen import HomeScreen
 from _EntertainmentScreen import EntertainmentScreen
 from _OfficeScreen import OfficeScreen
+from _WeatherScreen import WeatherScreen
 
 
 
@@ -53,6 +54,14 @@ class SmartMirror:
             self.screen = OfficeScreen(self.frm)
             self.screen.pack(side = TOP, fill=BOTH, expand = YES)
             self.onScreen='officescreen'
+        
+        #Weather screen
+        elif choice == 'w':
+            for widget in self.frm.winfo_children():
+                widget.destroy()
+            self.screen = WeatherScreen(self.frm)
+            self.screen.pack(side = TOP, fill=BOTH, expand = YES)
+            self.onScreen='weatherscreen'
 
     #Toggle fullscreen
     def toggle_fullscreen(self, event=None):
@@ -68,10 +77,3 @@ if __name__ == "__main__":
 
 
     
-
-        
-            
-
-    
-
-
