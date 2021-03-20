@@ -110,7 +110,7 @@ class Weather(Frame):
                 if self.icon != icon:
                     self.icon = icon
                     image = Image.open(icon)
-                    image = image.resize((200, 200), Image.ANTIALIAS)
+                    image = image.resize((150, 150), Image.ANTIALIAS)
                     image = image.convert('RGB')
                     photo = ImageTk.PhotoImage(image)
 
