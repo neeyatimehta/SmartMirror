@@ -10,3 +10,4 @@ Requirements
 - Pillow
 - json
 - datetime
+- calendar
