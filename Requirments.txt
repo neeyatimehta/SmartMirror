@@ -5,3 +5,6 @@ Requirements
 - threading
 - time
 - contextlib
+- requests
+- feedparser
+- Pillow
