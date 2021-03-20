@@ -30,7 +30,7 @@ We plan to use a two way see-through mirror behind which a monitor will be place
   - [x] Monthly Calendar
   - [x] Task List
   - [x] Calendar Events
-- [ ] Weather Forecast
+- [x] Weather Forecast
   - [x] Current Weather
   - [x] Weather forecast for one week 
 - [ ] Voice Commands
