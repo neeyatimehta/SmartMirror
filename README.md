@@ -22,7 +22,7 @@ We plan to use a two way see-through mirror behind which a monitor will be place
   - [x] Clock
   - [x] News
   - [x] Weather
-- [ ] Entertainment Screen
+- [x] Entertainment Screen
   - [x] Trending Movies
   - [x] Trending TV Shows
   - [ ] Trailer for Trending Movies and TV Shows 
