@@ -32,7 +32,7 @@ class Calendar(Frame):
         self.titleLbl = Label(self, text = self.title, font=('Helvetica', 30, 'bold'), fg="white", bg="black")
         self.titleLbl.pack(side=TOP, anchor=W)
         
-        self.calLbl = Label(self, font=('Consolas', 25), fg="white", bg="black")
+        self.calLbl = Label(self, font=('Consolas', 20), fg="white", bg="black")
         self.calLbl.pack(side=TOP, anchor=W)
         self.updateCal()
     def updateCal(self):
