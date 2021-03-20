@@ -16,8 +16,8 @@ This Smart Mirror is being developed with the idea of making a home smart to sav
 We plan to use a two way see-through mirror behind which a monitor will be placed to display the relevent data. Both, the mirror and the monitor will be framed inside a steel frame. The mirror needs to be contected to the Wifi to send and recieve data. The mirror will be controlled using voice commands.
 
 ### Features we plan to execute
-- [ ] Mirror Screen
-  - [ ] Clock 
+- [x] Mirror Screen
+  - [x] Clock 
 - [ ]  Main Screen
   - [ ] Clock
   - [ ] News
