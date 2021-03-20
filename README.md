@@ -37,7 +37,7 @@ We plan to use a two way see-through mirror behind which a monitor will be place
   - This helps in Switching Between the screens 
 - [ ] Command Error Screen
   - This is a Response Screen for when the user uses an unlisted command
-- [ ] App Drawer
+- [x] App Drawer
   - Homepage Containing the list of all the screens provided
 ## Instruction on How to use the program
 
