@@ -25,7 +25,7 @@ We plan to use a two way see-through mirror behind which a monitor will be place
 - [x] Entertainment Screen
   - [x] Trending Movies
   - [x] Trending TV Shows
-  - [ ] Trailer for Trending Movies and TV Shows 
+  - [x] Trailer for Trending Movies and TV Shows 
 - [x] Office Screen
   - [x] Monthly Calendar
   - [x] Task List
@@ -33,9 +33,9 @@ We plan to use a two way see-through mirror behind which a monitor will be place
 - [x] Weather Forecast
   - [x] Current Weather
   - [x] Weather forecast for one week 
-- [ ] Voice Commands
+- [x] Voice Commands
   - This helps in Switching Between the screens 
-- [ ] Command Error Screen
+- [x] Command Error Screen
   - This is a Response Screen for when the user uses an unlisted command
 - [x] App Drawer
   - Homepage Containing the list of all the screens provided
