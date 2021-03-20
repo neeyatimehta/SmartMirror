@@ -1,5 +1,6 @@
 from tkinter import *
 from _MirrorScreen import MirrorScreen
+from _HomeScreen import HomeScreen
 
 
 
@@ -13,6 +14,27 @@ class SmartMirror:
         self.screen.pack(side = TOP, fill=BOTH, expand = YES)
         self.state = False #fullscreen toggle variable
         self.tk.bind("<Return>", self.toggle_fullscreen)
+        self.tk.bind("<Key>", self.switch_screen)#switching screen
+        self.onScreen='mirrorscreen'
+        
+    def switch_screen(self,event):
+        choice = event.char #key value
+
+        #Home Screen
+        if choice == 'h':
+            for widget in self.frm.winfo_children():
+                widget.destroy()
+            self.screen = HomeScreen(self.frm)
+            self.screen.pack(side = TOP, fill=BOTH, expand = YES)
+            self.onScreen='homescreen'
+
+        #Black screen
+        elif choice == 'b':
+            for widget in self.frm.winfo_children():
+                widget.destroy()
+            self.screen = MirrorScreen(self.frm)
+            self.screen.pack(side = TOP, fill=BOTH, expand = YES)
+            self.onScreen='mirrorscreen'
 
     #Toggle fullscreen
     def toggle_fullscreen(self, event=None):
