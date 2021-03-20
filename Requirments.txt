@@ -8,3 +8,4 @@ Requirements
 - requests
 - feedparser
 - Pillow
+- json
