@@ -18,7 +18,7 @@ We plan to use a two way see-through mirror behind which a monitor will be place
 ### Features we plan to execute
 - [x] Mirror Screen
   - [x] Clock 
-- [ ]  Main Screen
+- [x]  Main Screen
   - [x] Clock
   - [x] News
   - [x] Weather
