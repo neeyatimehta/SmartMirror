@@ -99,9 +99,9 @@ class SmartMirror:
                 elif ('black' in command) or ('mirror' in command) or ('time' in command) or ('bye' in command):
                     for widget in self.frm.winfo_children():
                         widget.destroy()
-                    self.screen = BlackScreen(self.frm)
+                    self.screen = MirrorScreen(self.frm)
                     self.screen.pack(side = TOP, fill=BOTH, expand = YES)
-                    self.onScreen='blackscreen'
+                    self.onScreen='mirrorscreen'
                     
                 elif ('entertainment' in command) or ('movie' in command) or ('tv show' in command):
                     for widget in self.frm.winfo_children():
