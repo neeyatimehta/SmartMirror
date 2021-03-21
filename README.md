@@ -50,3 +50,7 @@ We will keep an updated list of all the libraries used in *Requirements.txt*
 * See-through acrylic mirror
 * HDMI Cable
 * USB Microphone
+
+## Project Presentation
+ **[Smart-Mirror.pptx](https://github.com/yetitodie/SmartMirror/files/6176956/Smart-Mirror.pptx)**
+
