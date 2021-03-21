@@ -46,15 +46,7 @@ class SmartMirror:
                 text = r.recognize_google(audio)
                 command = format(text)
                 #print(command)
-               
-                    
-                if ('office' in command) or ('calender' in command) or ('event' in command) or ('task' in command):
-                    for widget in self.frm.winfo_children():
-                        widget.destroy()
-                    self.screen = OfficeScreen(self.frm)
-                    self.screen.pack(side = TOP, fill=BOTH, expand = YES)
-                    self.onScreen='officescreen'
-                    
+                
                 if ('play' in command):
                     movieName = command.replace("play","")
                     searchQuery = movieName+" Trailer"
@@ -88,6 +80,15 @@ class SmartMirror:
                         else:
                             media.stop()
                             break
+               
+                    
+                if ('office' in command) or ('calender' in command) or ('event' in command) or ('task' in command):
+                    for widget in self.frm.winfo_children():
+                        widget.destroy()
+                    self.screen = OfficeScreen(self.frm)
+                    self.screen.pack(side = TOP, fill=BOTH, expand = YES)
+                    self.onScreen='officescreen'
+                                  
                     
                 elif ('home' in command) or ('news' in command) or ('headline' in command):
                     for widget in self.frm.winfo_children():
